@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upzelo</title>
+
+    <script id="upzpdl" src="https://exit-popup-84fb14.netlify.app/js/index.min.js"></script>
+</head>
+<body>
+
+    <main class="container">
+        <h1>UpzeloJs Custom Integration</h1>
+        <h2 class="display-4">Cancel your Subscription</h2>
+        <p>To cancel your subscription please click the below button.</p>
+        <form action="">
+            <button id="cancel-subscription-button" type="submit" class="btn btn-primary">
+            Unsubscribe</button>
+        </form>
+    </main>
+
+    <script>
+        
+        // NOTE: these are test accounts
+        window.upzelo.init({
+            selector: '#cancel-subscription-button',
+            appId: "upz_app_31d776e5aeea",
+            customerId: "cus_KluQGgjvLCcIfC",
+            type: 'minimal',
+        }); 
+    
+        /*
+        # Upzelo Intermediate Embed Option
+        ## upzpdl Script inserted
+        ## Cancel button overriden to '#cancel-subscription-button'
+        */
+
+    </script>
+</body>
+</html>
