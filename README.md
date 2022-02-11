@@ -8,7 +8,7 @@ To launch a cancellation flow without automated cancellation processing you’ll
 
 **Example HTML**: [simple.html](examples/simple.html)
 
-**Demo**: [Matts Cakes](https://exit-popup-84fb14.netlify.app/examples/cakes.html)
+**Demo**: [Matts Cakes](https://upzelojs.netlify.app/examples/cakes.html)
 
 ## 2. Custom
 
@@ -16,7 +16,7 @@ If you would like to customise UpzeloJs further, such as launching from custom s
 
 **Example HTML**: [custom.html](examples/custom.html)
 
-**Demo**: [Boots 4 U](https://exit-popup-84fb14.netlify.app/examples/boots.html)
+**Demo**: [Boots 4 U](https://upzelojs.netlify.app/examples/boots.html)
 
 ## 3. Secure
 
@@ -24,7 +24,7 @@ To enable automated processing with your subscription platform you’ll need to 
 
 **Example HTML**: [secure.html](examples/secure.html)
 
-**Demo**: [Razors](https://exit-popup-84fb14.netlify.app/examples/razors.html).
+**Demo**: [Razors](https://upzelojs.netlify.app/examples/razors.html).
 
 ## Where to find your App ID
 
