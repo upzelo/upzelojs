@@ -64,7 +64,7 @@ The simplest method to integrate an Upzelo cancellation flow. Should be installe
 ```html
 <script
   id="upzpdl"
-  src="//upzelo.io/pdl.js"
+  src="https://assets.upzelo.com/upzelo.min.js"
   appId="[App id from your Account]"
   customerId="[Customer Id from your subscription platform]"
 ></script>
@@ -87,7 +87,7 @@ Are you customising how UpzeloJs loads on your website or application? Implement
 ```html
 <script
   id="upzpdl"
-  src="upzelo.com/the_vue_app.js"
+  src="https://assets.upzelo.com/upzelo.min.js"
   appId="upz_app_b9c70b638d48"
 ></script>
 ```
