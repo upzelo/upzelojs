@@ -54,7 +54,12 @@ If you have multiple cancel elements on your website or application, you can sup
 
 # Implementation Steps
 
-## 1. Single script tag
+  
+## Step 1. Add the script tag
+
+  There are 2 options depending on which mode you which to run
+
+  ### Option 1. Single script tag
 
 The simplest method to integrate an Upzelo cancellation flow. Should be installed across your website or application in the `<head>` for best results.
 
@@ -80,9 +85,10 @@ Available attributes:
 
 **NOTE:** `hash` and `type` are not parameters - in order to implement the "Complete Setup" with automated billing actions, refer to `window.upzelo.init()` configuration options below.
 
-## 2. Script in head and in page
+### Option 2. Script in head and in page
 
-Are you customising how UpzeloJs loads on your website or application? Implement a `window.upzelo.init()` function with configuration options.
+If you need to customise how UpzeloJs loads on your website, you can call the `window.upzelo.init()` function with configuration options.
+  This allows you to wait for your own code to run before setting the Upzelo config options. Not that the `appId` is still required on the `<script>` tag.
 
 ```html
 <script
@@ -99,7 +105,7 @@ window.upzelo.init({
 });
 ```
 
-Configuration options
+Config options
 
 - `appId`
 - `customerId`
@@ -109,7 +115,7 @@ Configuration options
 - `hash` optional
 - `data` internal use only
 
-## Custom events
+### Custom events
 
 Either of the above methods allows you to implement your own events to open the modal
 
@@ -119,7 +125,7 @@ element.addEventListener("click", () => {
 });
 ```
 
-## 3. Signed Payload for Automated Processing
+## Step 2. Signed Payload for Automated Processing (optional)
 
 To verify the request is authorized by your website, Upzelo requires a hash that’s been generated on your server.
 
