@@ -1,10 +1,10 @@
 # Planning your UpzeloJs Integration
 
-Our integration options are designed to provide ease and flexibility while ensuring appropriate security levels are in place for handling cancellation flow actions.
+Our integration options are designed to provide ease and flexibility while ensuring appropriate security levels are in place for handling cancellation flow actions. There are various ways to implement Upzelo, depending on your access to your website code.
 
 ## 1. Simple
 
-To launch a cancellation flow without automated cancellation processing you’ll need to implement the Upzelo JavaScript tag into the <head> of your website or application. For this scenario, follow Step 1 only.
+To launch a cancellation flow without automated cancellation processing you’ll need to implement the Upzelo JavaScript tag into the `<head>` of your website or application. For this scenario, follow Step 1 only.
 
 **Example HTML**: [simple.html](examples/simple.html)
 
@@ -12,7 +12,7 @@ To launch a cancellation flow without automated cancellation processing you’ll
 
 ## 2. Custom
 
-If you would like to customise UpzeloJs further, such as launching from custom selectors on your page, implement step 2.
+If you would like to customise UpzeloJs further, such as launching from custom selectors on your page, implement option 2 of step 1.
 
 **Example HTML**: [custom.html](examples/custom.html)
 
@@ -20,7 +20,7 @@ If you would like to customise UpzeloJs further, such as launching from custom s
 
 ## 3. Secure
 
-To enable automated processing with your subscription platform you’ll need to implement additional steps to secure your integration with a ‘signed payload’ from your server.
+To enable automated processing with your subscription platform you’ll need to implement additional steps to secure your integration with a ‘signed payload’ from your server. For this, follow Step 2 below.
 
 **Example HTML**: [secure.html](examples/secure.html)
 
@@ -50,7 +50,8 @@ In most cases, your website or application will have a cancellation page with a 
 
 If you have buttons or links that have an ID attribute of 'cancel' that you don’t want to launch a cancellation flow, then you need to supply a custom selector. This will override the default and prevent loading a cancellation flow on those elements.
 
-If you have multiple cancel elements on your website or application, you can supply multiple CSS selectors to the ‘selector’ attribute in **Step 2**.
+If you have multiple cancel elements on your website or application, you can supply multiple CSS selectors to the ‘selector’ attribute (option 2) or config (option 2) in **Step 1**.
+
 
 # Implementation Steps
 
