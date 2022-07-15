@@ -53,6 +53,19 @@ If you have buttons or links that have an ID attribute of 'cancel' that you don�
 If you have multiple cancel elements on your website or application, you can supply multiple CSS selectors to the ‘selector’ attribute (option 2) or config (option 2) in **Step 1**.
 
 
+## Customers with multiple subscriptions
+
+Customers may have 1 or more subscriptions. To tell Upzelo which subscription a cancellation flow should apply to, you can include the Subscription Id. For example in your own platform UI or customer account page you may with to offer multiple subscription cancellation buttons, each with the relevant Subscription Id mapped to the cancellation flow.
+
+If no subscriptionId is passed to Upzelo, then any cancellation or offer action is applied to the customer (and therefore all of their subscriptions).
+
+```js
+window.upzelo.init({
+    subscriptionId: "[Subscription Id from your subscription platform"
+});
+```
+
+
 # Implementation Steps
 
   
