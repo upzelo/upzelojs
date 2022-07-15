@@ -123,7 +123,7 @@ Config options
 
 - `appId`
 - `customerId`
-- `type` 'minimal`|`full`defaults to`minimal`. `hash`is required when set to`full`
+- `type` `minimal`|`full`defaults to`minimal`. `hash`is required when set to`full`
 - `mode` 'test' | 'live' defaults to 'live'
 - `selector` optional
 - `hash` optional
