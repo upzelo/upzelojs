@@ -61,7 +61,7 @@ If no subscriptionId is passed to Upzelo, then any cancellation or offer action 
 
 ```js
 window.upzelo.init({
-    subscriptionId: "[Subscription Id from your subscription platform"
+    subscriptionId: "[Subscription Id from your subscription platform]"
 });
 ```
 
@@ -97,7 +97,7 @@ Available attributes:
 - `selector` optional - Override the default selector with your own
 - `debug` optional - Outputs logs to the console. Internal use only
 
-**NOTE:** `hash` and `type` are not parameters - in order to implement the "Complete Setup" with automated billing actions, refer to `window.upzelo.init()` configuration options below.
+**NOTE:** `hash` and `type` are not script parameters - in order to implement the "Complete Setup" with automated billing actions, refer to `window.upzelo.init()` configuration options below.
 
 ### Option 2. Script in head and in page
 
@@ -127,6 +127,8 @@ Config options
 - `mode` 'test' | 'live' defaults to 'live'
 - `selector` optional
 - `hash` optional
+- `subscriptionId` - optional - The subscription Id from you subscription platform to apply outcomes. e.g. `sub_123456ab`
+- `provider` - optional - Set the provider to `Stripe`, `Recurly` or `Recharge` where an Upzelo representative has asked you to do so, for a custom implementation.
 - `data` internal use only
 
 ### Custom events
